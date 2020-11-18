@@ -5,15 +5,19 @@
         <p class="text-lg tracking-wide antialiased">
           Bonjour. I’m a digital nomad based in Amsterdam.
           I’m currently working at <a
+            class="text-blue-500 focus:text-blue-600 dark:text-red-500 dark:focus:text-red-600 underline"
+
             href="https://storyscript.com"
             target="_blank"
             rel="noopener"
           >Storyscript</a>.
           You can find more about me <a
+            class="text-blue-500 focus:text-blue-600 dark:text-red-500 dark:focus:text-red-600 underline"
             href="https://www.linkedin.com/in/jean-barriere/"
             target="_blank"
             rel="noopener"
           >here</a>, or follow my work <a
+            class="text-blue-500 focus:text-blue-600 dark:text-red-500 dark:focus:text-red-600 underline"
             href="https://github.com/JeanBarriere"
             target="_blank"
             rel="noopener"
@@ -40,13 +44,4 @@ export default defineComponent({
 </script>
 
 <style scoped>
-a {
-  @apply text-red-500 underline;
-}
-
-a:hover,
-a:active,
-a:focus {
-  @apply text-red-600;
-}
 </style>

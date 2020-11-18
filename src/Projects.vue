@@ -5,7 +5,7 @@
     </h3>
     <div>
       <div
-        class="bg-gradient-to-br from-teal-400 to-blue-500 dark:from-teal-500 dark:to-red-600 w-64 h-64 text-white flex items-center justify-center"
+        class="bg-gradient-to-br from-teal-400 to-blue-500 dark:from-teal-400 dark:to-red-500 w-64 h-64 text-white flex items-center justify-center"
       >
         <span class="font-medium text-3xl subpixel-antialiased">coming soon</span>
       </div>
