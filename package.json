@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build --outDir docs"
   },
   "dependencies": {
     "tailwindcss": "^1.9.6",
