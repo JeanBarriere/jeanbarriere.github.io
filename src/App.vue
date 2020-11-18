@@ -137,15 +137,6 @@ export default defineComponent({
 <style lang="css">
 @import './index.css';
 
-.fade-enter-active,
-.fade-leave-active {
-  @apply transition-opacity duration-100 ease-in;
-}
-.fade-enter,
-.fade-leave-to {
-  @apply opacity-0;
-}
-
 .slide-enter-active {
   @apply transition-all delay-300 duration-300 ease-in-out transform opacity-0 translate-x-32;
 }
