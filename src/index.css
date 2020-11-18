@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+body {
+  min-width: 30rem;
+  overflow-y: 'hidden';
+}
+
+body:not(.dark) {
+  color: black;
+  background-color: white;
+}
+
+body.dark {
+  color: white;
+  background-color: black;
+}
+
+h1, h2, h3, h4, h5 {
+  @apply font-display;
+}
+
+p {
+  @apply font-serif;
+}
+
+div, span {
+  @apply font-sans;
+}
