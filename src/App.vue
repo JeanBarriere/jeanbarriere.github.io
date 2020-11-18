@@ -1,6 +1,6 @@
 <template>
-  <div class="select-none min-h-screen max-h-screen flex flex-col items-stretch justify-between mx-auto py-12 px-10 max-w-6xl overflow-hidden">
-    <nav class="flex items-center justify-between h-8">
+  <div class="select-none min-h-screen max-h-screen flex flex-col items-stretch justify-between mx-auto py-12 sm:px-10 max-w-6xl overflow-hidden">
+    <nav class="flex flex-col sm:flex-row space-y-12 sm:space-y-0 items-center justify-between h-8">
       <router-link :to="{ name: 'home' }">
         <logo class="h-8 w-24 cursor-pointer" />
       </router-link>
@@ -55,7 +55,7 @@
       </div>
     </nav>
     <div class="flex flex-1 flex-col items-center justify-around mt-16 mb-8">
-      <h2 class="text-6xl">
+      <h2 class="text-6xl px-10 sm:p-0">
         jean barriere
       </h2>
       <div class="relative w-full h-64">

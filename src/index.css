@@ -5,8 +5,7 @@
 @import 'tailwindcss/utilities';
 
 body {
-  min-width: 30rem;
-  overflow-y: 'hidden';
+  @apply overflow-hidden;
 }
 
 body:not(.dark) {

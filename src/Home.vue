@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center justify-center">
     <div>
-      <div class="ml-24 mb-4 bg-gray-500 dark:bg-white bg-opacity-25 dark:bg-opacity-25 p-6 rounded-t-xl rounded-br-xl max-w-md+">
+      <div class="sm:ml-24 mb-4 bg-gray-500 dark:bg-white bg-opacity-25 dark:bg-opacity-25 p-6 rounded-xl sm:rounded-bl-none max-w-md+">
         <p class="text-lg tracking-wide antialiased">
           Bonjour. I’m a digital nomad based in Amsterdam.
           I’m currently working at <a
@@ -20,7 +20,7 @@
           >there</a>.
         </p>
       </div>
-      <div class="w-24 h-24 rounded-full overflow-hidden border-img border-black dark:border-white">
+      <div class="w-24 h-24 rounded-full overflow-hidden border-img border-black dark:border-white mx-auto sm:mx-0">
         <img
           class="object-contain object-center rounded-full"
           src="./assets/me.jpeg"
