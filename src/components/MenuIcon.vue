@@ -12,7 +12,7 @@
     <transition name="fade">
       <span
         v-if="showTooltip"
-        class="bg-black text-white dark:text-white dark:bg-white bg-opacity-75 dark:bg-opacity-50 p-2 absolute bottom-full mb-2 left-0 rounded-md leading-snug font-sans text-sm whitespace-no-wrap"
+        class="bg-gray-900 dark:bg-teal-800 text-white dark:text-white p-2 absolute bottom-full mb-2 left-0 rounded-md leading-snug font-sans text-sm whitespace-no-wrap"
         v-text="title"
       />
     </transition>
@@ -40,7 +40,8 @@ export default defineComponent({
 .fade-enter-active, .fade-leave-active {
   @apply transition-opacity duration-100 ease-in;
 }
-.fade-enter, .fade-leave-to {
+
+.fade-enter-from, .fade-leave-to {
   @apply opacity-0;
 }
 </style>

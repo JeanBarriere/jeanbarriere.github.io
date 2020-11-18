@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black text-white dark:text-black dark:bg-white bg-opacity-75 dark:bg-opacity-50 p-2 absolute top-full mt-4 right-0 rounded-md leading-snug font-sans text-sm whitespace-no-wrap">
+  <div class="bg-gray-900 dark:bg-teal-800 text-white dark:text-black p-2 absolute top-full mt-4 right-0 rounded-md leading-snug font-sans text-sm whitespace-no-wrap">
     <ul class="px-4 py-2 space-y-2">
       <li
         v-for="(item, idx) of items"
