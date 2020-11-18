@@ -1,5 +1,5 @@
 <template>
-  <div class="select-none min-h-screen max-h-screen flex flex-col items-stretch justify-between mx-auto py-12 sm:px-10 max-w-6xl overflow-hidden">
+  <div class="select-none min-h-screen max-h-screen flex flex-col items-stretch justify-between mx-auto py-12 px-4 sm:px-10 max-w-6xl overflow-hidden">
     <nav class="flex flex-col sm:flex-row space-y-12 sm:space-y-0 items-center justify-between h-8">
       <router-link :to="{ name: 'home' }">
         <logo class="h-8 w-24 cursor-pointer" />
