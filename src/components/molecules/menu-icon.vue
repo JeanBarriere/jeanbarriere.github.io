@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="relative"
-  >
+  <div class="relative">
     <icon
       :name="name"
       class="cursor-pointer"
@@ -21,7 +19,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Icon, { icons } from '../assets/icon.vue'
+import Icon, { icons } from '/@/components/atoms/icon.vue'
 
 export default defineComponent({
   name: 'MenuIcon',
@@ -37,11 +35,13 @@ export default defineComponent({
 </script>
 
 <style lang="css">
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   @apply transition-opacity duration-100 ease-in;
 }
 
-.fade-enter-from, .fade-leave-to {
+.fade-enter-from,
+.fade-leave-to {
   @apply opacity-0;
 }
 </style>

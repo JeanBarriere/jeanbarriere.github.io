@@ -1,15 +1,13 @@
 <template>
-  <skel />
+  <home-tpl />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Skel from '/@/components/templates/skel.vue'
+import HomeTpl from '/@/components/templates/home.vue'
 
 export default defineComponent({
-  name: 'App',
-  components: {
-    Skel
-  }
+  name: 'Home',
+  components: { HomeTpl }
 })
 </script>

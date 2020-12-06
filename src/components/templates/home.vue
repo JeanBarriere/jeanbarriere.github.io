@@ -6,7 +6,6 @@
           Bonjour. I’m a digital nomad based in Amsterdam.
           I’m currently working at <a
             class="text-blue-500 focus:text-blue-600 dark:text-red-500 dark:focus:text-red-600 underline"
-
             href="https://storyscript.com"
             target="_blank"
             rel="noopener"
@@ -27,7 +26,7 @@
       <div class="w-24 h-24 rounded-full overflow-hidden border-img border-black dark:border-white mx-auto sm:mx-0">
         <img
           class="object-contain object-center rounded-full"
-          src="./assets/me.jpeg"
+          src="/@/assets/me.jpeg"
           alt="me"
         >
       </div>
@@ -39,9 +38,6 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'Home'
+  name: 'HomeTpl'
 })
 </script>
-
-<style scoped>
-</style>

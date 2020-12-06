@@ -7,6 +7,7 @@ module.exports = {
   rules: {
     'comma-dangle': ['error', 'never'],
     semi: ['error', 'never'],
-    quotes: ['error', 'single', { avoidEscape: true }]
+    quotes: ['error', 'single', { avoidEscape: true }],
+    'import/no-absolute-path': ['off']
   }
 }

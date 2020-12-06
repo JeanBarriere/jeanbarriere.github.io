@@ -24,7 +24,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'Actionable',
+  name: 'Selector',
   props: {
     items: { type: Object, required: true },
     current: { type: String, required: false, default: '' }

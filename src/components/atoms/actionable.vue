@@ -1,8 +1,6 @@
 <template>
   <div class="relative">
-    <div
-      @click="showContent = !showContent"
-    >
+    <div @click="showContent = !showContent">
       <slot
         name="toggler"
         :triggered="showContent"
