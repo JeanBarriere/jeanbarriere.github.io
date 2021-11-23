@@ -71,8 +71,8 @@
     </h3>
     <div class="flex row space-x-6 items-center justify-start glitch">
       <template
-        v-for="(hobby, idx) in hobbies"
-        :key="`hobby-${idx}`"
+        v-for="hobby in hobbies"
+        :key="`hobby-${hobby.name}`"
       >
         <menu-icon
           class="block"
@@ -81,7 +81,9 @@
           dur="3s"
           :style="`--filtername: url(#filter-${hobby.icon})`"
         />
-        <span class="hidden print:block tracking-wide font-sans text-md subpixel-antialiased leading-normal">
+        <span
+          class="hidden print:block tracking-wide font-sans text-md subpixel-antialiased leading-normal"
+        >
           {{ hobby.name }}
         </span>
       </template>
