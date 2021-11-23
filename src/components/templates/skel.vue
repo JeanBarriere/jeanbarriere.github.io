@@ -4,7 +4,7 @@
     <div class="flex flex-1 flex-col items-start justify-start">
       <!-- https://freefrontend.com/css-text-glitch-effects/ -->
       <h2
-        class="text-8xl antialiased px-10 sm:p-0 my-24 glitch-name print:my-12 print:text-6xl print:animation-none"
+        class="text-5xl md:text-8xl antialiased px-10 sm:p-0 my-24 glitch-name print:my-12 print:text-6xl print:animation-none"
         style="--stacks: 3"
       >
         <span style="--index: 1">jean barriere</span>

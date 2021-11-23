@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <h2 class="font-bold tracking-widest font-sans text-3xl subpixel-antialiased leading-none mb-12">
+    <h2 class="font-bold tracking-widest font-sans text-2xl sm:text-3xl subpixel-antialiased leading-none mb-12">
       Frontend Engineer
     </h2>
     <h3 class="font-light tracking-wider font-sans text-xl subpixel-antialiased leading-none mb-8">
@@ -12,19 +12,19 @@
         :key="`exp-${idx}`"
         class="my-8"
       >
-        <div class="flex row items-center justify-between gap-2 mb-2">
+        <div class="flex row items-end justify-between mb-2">
           <component
             :is="exp.website ? 'a' : 'h4'"
             :href="exp.website"
             :target="exp.website ? '_blank' : undefined"
             :rel="exp.website ? 'noopener' : undefined"
-            class="font-light font-display tracking-wider text-3xl antialiased"
+            class="font-light font-display tracking-wider text-2xl sm:text-3xl antialiased"
           >
             {{ exp.company }}
           </component>
-          <span class="font-light tracking-wider text-md font-sans antialiased">{{ exp.from }} - {{ exp.to }}</span>
+          <span class="font-light tracking-wider text-md font-sans antialiased whitespace-nowrap">{{ exp.from }} - {{ exp.to }}</span>
         </div>
-        <h5 class="font-bold tracking-widest text-lg font-sans antialiased mb-4">
+        <h5 class="font-bold tracking-widest text-md sm:text-lg font-sans antialiased mb-4">
           {{ exp.position }}
         </h5>
         <p class="font-sans tracking-wide leading-normal text-md antialiased text-justify mb-6 whitespace-pre-line">
@@ -51,7 +51,7 @@
       <div
         v-for="(education, idx) in educations"
         :key="`educ-${idx}`"
-        class="bg-gradient-to-t from-white to-gray-200 dark:from-black border rounded-md border-gray-300 dark:border-gray-700 dark:to-gray-800 w-64 h-64 text-black dark:text-white flex flex-col items-start justify-start p-4"
+        class="bg-gradient-to-t from-white to-gray-200 dark:from-black border rounded-md border-gray-300 dark:border-gray-700 dark:to-gray-800 w-full sm:w-64 h-64 text-black dark:text-white flex flex-col items-start justify-start p-4"
       >
         <span class="font-bold text-lg tracking-widest subpixel-antialiased">{{ education.type }}</span>
         <span class="font-light text-4xl subpixel-antialiased mt-4">{{ education.title }}</span>
