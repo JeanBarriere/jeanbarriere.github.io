@@ -1,30 +1,33 @@
 {
-  "name": "jeanbarriere.github.io",
+  "name": "jean.barriere.io",
   "version": "0.0.1",
-  "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --outDir docs --assetsDir ."
+    "build": "vue-tsc --noEmit && vite build --outDir docs --assetsDir .",
+    "serve": "vite preview",
+    "lint": "eslint --fix ."
   },
   "dependencies": {
-    "tailwindcss": "^1.9.6",
-    "vue": "^3.0.2",
-    "vue-router": "^4.0.0-rc.3"
+    "tailwindcss": "^2.2.19",
+    "vue": "^3.2.22",
+    "vue-router": "4"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.7.0",
-    "@typescript-eslint/parser": "^4.7.0",
-    "@vue/compiler-sfc": "^3.0.2",
-    "@vue/eslint-config-standard": "^5.1.2",
-    "@vue/eslint-config-typescript": "^7.0.0",
-    "eslint": "^7.7.0",
-    "eslint-config-standard": "^16.0.1",
-    "eslint-plugin-import": "^2.22.1",
+    "@types/node": "^16.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vitejs/plugin-vue": "^1.10.0",
+    "@vue/eslint-config-standard": "^6.1.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.1.0",
-    "eslint-plugin-vue": "^7.1.0",
-    "typescript": "^4.0.5",
-    "vite": "1.0.0-rc.9"
+    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-vue": "^8.1.1",
+    "postcss": "^8.3.11",
+    "typescript": "^4.5.2",
+    "vite": "^2.6.14",
+    "vue-tsc": "^0.29.6"
   }
 }

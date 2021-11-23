@@ -1,22 +1,13 @@
-const plugin = require('tailwindcss/plugin')
-
 module.exports = {
-  future: {
-    defaultLineHeights: true,
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true
-  },
-  purge: {
-    content: ['./index.html', './src/**/*.vue', './src/*.vue'],
-    whitelist: [':root']
-  },
+  darkMode: 'class',
+  purge: ['./index.html', './src/**/*.vue', './src/*.vue'],
   theme: {
     extend: {
       inset: {
         full: '100%'
       },
-      maxWidth: {
-        'md+': '30rem'
+      screens: {
+        print: { raw: 'print' }
       },
       borderWidth: {
         img: '.25rem'
@@ -57,13 +48,5 @@ module.exports = {
     backgroundOpacity: ['responsive', 'hover', 'focus', 'active', 'group-hover', 'dark'],
     gradientColorStops: ['responsive', 'hover', 'focus', 'active', 'group-hover', 'dark']
   },
-  plugins: [
-    plugin(function ({ addVariant, e }) {
-      addVariant('dark', ({ container, separator }) => {
-        container.walkRules(rule => {
-          rule.selector = `body.dark .${e(`dark${separator}${rule.selector.slice(1)}`)}`
-        })
-      })
-    })
-  ]
+  plugins: []
 }

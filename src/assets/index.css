@@ -4,10 +4,6 @@
 
 @import 'tailwindcss/utilities';
 
-body {
-  @apply overflow-hidden;
-}
-
 body:not(.dark) {
   color: black;
   background-color: white;
@@ -28,4 +24,8 @@ p {
 
 div, span {
   @apply font-sans;
+}
+
+.glitch svg:hover, .glitch svg:focus, .glicth svg:active, .active svg {
+  filter: var(--filtername);
 }

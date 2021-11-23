@@ -23,7 +23,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'Actionable',
+  name: 'AActionable',
   props: {
     transitionName: { type: String, default: 'fade' }
   },

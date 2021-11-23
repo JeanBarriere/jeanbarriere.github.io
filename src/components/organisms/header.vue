@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex flex-col sm:flex-row space-y-12 sm:space-y-0 items-center justify-between h-8">
+  <nav class="flex flex-col sm:flex-row space-y-12 sm:space-y-0 items-center justify-between h-8 print:hidden">
     <router-link :to="{ name: 'home' }">
       <logo class="h-8 w-24 cursor-pointer" />
     </router-link>
@@ -15,13 +15,15 @@
         />
       </a>
       <router-link
-        :to="{ name: 'projects' }"
+        :to="{ name: 'resume' }"
         active-class="active"
         exact-active-class=""
       >
         <menu-icon
-          name="chip"
-          title="my projects"
+          name="resume"
+          title="about me"
+          dur="3s"
+          style="--filtername: url(#filter-resume)"
         />
       </router-link>
       <a
@@ -40,6 +42,8 @@
             name="contrast"
             title="theme"
             :class=" { 'active': triggered }"
+            dur="10s"
+            style="--filtername: url(#filter-contrast)"
           />
         </template>
         <template #content="{ close }">
@@ -57,10 +61,10 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Actionable from '/@/components/atoms/actionable.vue'
-import Logo from '/@/components/atoms/logo.vue'
-import MenuIcon from '/@/components/molecules/menu-icon.vue'
-import Selector from '/@/components/molecules/selector.vue'
+import Actionable from '@/components/atoms/actionable.vue'
+import Logo from '@/components/atoms/logo.vue'
+import MenuIcon from '@/components/molecules/menu-icon.vue'
+import Selector from '@/components/molecules/selector.vue'
 
 export default defineComponent({
   name: 'OHeader',

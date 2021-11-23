@@ -1,13 +1,13 @@
 <template>
-  <home-tpl />
+  <resume-tpl />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HomeTpl from '@/components/templates/home.vue'
+import ResumeTpl from '@/components/templates/resume.vue'
 
 export default defineComponent({
-  name: 'VHome',
-  components: { HomeTpl }
+  name: 'VResume',
+  components: { ResumeTpl }
 })
 </script>

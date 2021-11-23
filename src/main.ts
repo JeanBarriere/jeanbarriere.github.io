@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
-import App from '/@/App.vue'
-import ClickOutside from '/@/directives/clickOutside'
-import Router from '/@/router'
-import '/@/assets/index.css'
+import App from '@/App.vue'
+import ClickOutside from './directives/clickOutside'
+import Router from './router'
+import '@/assets/index.css'
 
 const app = createApp(App)
 
