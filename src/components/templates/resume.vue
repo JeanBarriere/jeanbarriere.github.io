@@ -1,10 +1,10 @@
 <template>
   <div class="w-full">
-    <h2 class="font-bold tracking-widest font-sans text-2xl sm:text-3xl subpixel-antialiased leading-none mb-12">
+    <h2 class="font-bold tracking-widest font-sans text-2xl sm:text-3xl subpixel-antialiased leading-none">
       Frontend Engineer
     </h2>
-    <h3 class="font-light tracking-wider font-sans text-xl subpixel-antialiased leading-none mb-8">
-      Experience
+    <h3 class="headline">
+      experience
     </h3>
     <div class="select-text flex flex-col items-stretch">
       <section
@@ -44,8 +44,8 @@
         </div>
       </section>
     </div>
-    <h3 class="font-light tracking-wider font-sans text-xl subpixel-antialiased leading-none mt-12 mb-8">
-      Education
+    <h3 class="headline">
+      education
     </h3>
     <div class="flex row justify-start xl:justify-between flex-wrap gap-4 select-text">
       <div
@@ -66,10 +66,10 @@
         </div>
       </div>
     </div>
-    <h3 class="font-light tracking-wider font-sans text-lg subpixel-antialiased leading-none mt-12 mb-8">
+    <h3 class="headline">
       hobbies
     </h3>
-    <div class="flex row space-x-6 items-center justify-start glitch">
+    <div class="flex row space-x-6 items-center justify-center glitch">
       <template
         v-for="hobby in hobbies"
         :key="`hobby-${hobby.name}`"
@@ -206,3 +206,13 @@ export default defineComponent({
   }
 })
 </script>
+
+<style>
+.headline {
+  @apply relative font-light tracking-wider font-sans text-xl text-right subpixel-antialiased leading-none mb-8 mt-12;
+}
+.headline::before {
+  content: '';
+  @apply block absolute inset-0 border-b-2 border-gray-200 dark:border-gray-800 transform -translate-y-2/4 top-1 right-2/4;
+}
+</style>

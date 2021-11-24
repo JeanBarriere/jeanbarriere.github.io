@@ -3,14 +3,27 @@
     <o-header />
     <div class="flex flex-1 flex-col items-start justify-start">
       <!-- https://freefrontend.com/css-text-glitch-effects/ -->
-      <h2
-        class="text-5xl md:text-8xl antialiased px-10 sm:p-0 my-24 glitch-name print:my-12 print:text-6xl print:animation-none"
-        style="--stacks: 3"
-      >
-        <span style="--index: 1">jean barriere</span>
-        <span style="--index: 2">jean barriere</span>
-        <span style="--index: 3">jean barriere</span>
-      </h2>
+      <div class="px-10 sm:p-0 my-24 print:my-8 flex w-full items-start justify-between">
+        <h2
+          class="text-5xl md:text-8xl antialiased glitch-name print:text-6xl print:animation-none"
+          style="--stacks: 3"
+        >
+          <span style="--index: 1">jean barriere</span>
+          <span style="--index: 2">jean barriere</span>
+          <span style="--index: 3">jean barriere</span>
+        </h2>
+        <div class="hidden print:flex flex-col items-end justify-end gap-y-2">
+          <div class="flex items-center flex-row-reverse gap-4 font-medium font-display tracking-wider text-lg antialiased">
+            <icon name="github" /><span>@JeanBarriere</span>
+          </div>
+          <div class="flex items-center flex-row-reverse gap-4 font-medium font-display tracking-wider text-lg antialiased">
+            <icon name="book" /><span>/in/jean-barriere</span>
+          </div>
+          <div class="flex items-center flex-row-reverse gap-4 font-medium font-display tracking-wider text-lg antialiased">
+            <icon name="bubble" /><span>jean&#64;barriere.io</span>
+          </div>
+        </div>
+      </div>
       <div
         class="relative w-full"
       >
@@ -30,11 +43,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import OHeader from '@/components/organisms/header.vue'
+import Icon from '@/components/atoms/icon.vue'
 
 export default defineComponent({
   name: 'SkelTpl',
   components: {
-    OHeader
+    OHeader,
+    Icon
   }
 })
 </script>
@@ -66,12 +81,17 @@ export default defineComponent({
   @apply font-display;
   grid-row-start: 1;
   grid-column-start: 1;
-  --stack-height: calc(33% / var(--stacks) - 1px);
-  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
-  --clip-top: calc(var(--stack-height) * var(--index));
-  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
-  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
-  animation: glitch 2.5s ease infinite 5s alternate-reverse;
+}
+
+@media screen {
+  .glitch-name span {
+    --stack-height: calc(33% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: glitch 2.5s ease infinite 5s alternate-reverse;
+  }
 }
 
 .glitch-name span:nth-child(odd) { --glitch-translate: 8px; }
