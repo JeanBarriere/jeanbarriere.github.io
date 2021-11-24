@@ -13,15 +13,30 @@
           <span style="--index: 3">jean barriere</span>
         </h2>
         <div class="hidden print:flex flex-col items-end justify-end gap-y-2">
-          <div class="flex items-center flex-row-reverse gap-4 font-medium font-display tracking-wider text-lg antialiased">
+          <a
+            href="//github.com/jeanbarriere"
+            target="_blank"
+            rel="noopener"
+            class="flex items-center flex-row-reverse gap-4 font-medium font-display tracking-wider text-lg antialiased"
+          >
             <icon name="github" /><span>@JeanBarriere</span>
-          </div>
-          <div class="flex items-center flex-row-reverse gap-4 font-medium font-display tracking-wider text-lg antialiased">
+          </a>
+          <a
+            href="//linkedin.com/in/jean-barriere"
+            target="_blank"
+            rel="noopener"
+            class="flex items-center flex-row-reverse gap-4 font-medium font-display tracking-wider text-lg antialiased"
+          >
             <icon name="book" /><span>/in/jean-barriere</span>
-          </div>
-          <div class="flex items-center flex-row-reverse gap-4 font-medium font-display tracking-wider text-lg antialiased">
+          </a>
+          <a
+            href="mailto:jean@barriere.io"
+            target="_blank"
+            rel="noopener"
+            class="flex items-center flex-row-reverse gap-4 font-medium font-display tracking-wider text-lg antialiased"
+          >
             <icon name="bubble" /><span>jean&#64;barriere.io</span>
-          </div>
+          </a>
         </div>
       </div>
       <div
