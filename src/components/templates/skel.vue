@@ -1,7 +1,7 @@
 <template>
   <div class="select-none min-h-screen flex flex-col items-stretch justify-between mx-auto py-12 px-4 sm:px-10 max-w-6xl print:py-0">
     <o-header />
-    <div class="flex flex-1 flex-col items-start justify-start">
+    <div class="flex flex-1 flex-col items-start justify-start relative z-0">
       <!-- https://freefrontend.com/css-text-glitch-effects/ -->
       <div class="px-10 sm:p-0 my-24 print:my-8 flex w-full items-start justify-between">
         <h2

@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex flex-col sm:flex-row space-y-12 sm:space-y-0 items-center justify-between h-8 print:hidden">
+  <nav class="flex flex-col sm:flex-row gap-y-8 items-center justify-between print:hidden relative z-10">
     <router-link :to="{ name: 'home' }">
       <logo class="h-8 w-24 cursor-pointer" />
     </router-link>
