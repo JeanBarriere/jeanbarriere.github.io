@@ -4,7 +4,7 @@
       <div class="py-2 mt-2 mb-4 max-w-xl">
         <p class="text-3xl tracking-wide antialiased">
           👋 Bonjour. I’m a digital nomad based in Amsterdam and am currently looking for a new challenge.<br><br>
-          If your company is making an impact and you're looking for passionate developers, don't hesitate to contact me!
+          If your company is making an impact and you're looking for a passionate developer, don't hesitate to contact me!
         </p>
       </div>
     </div>

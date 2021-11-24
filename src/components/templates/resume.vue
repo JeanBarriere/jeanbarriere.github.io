@@ -170,7 +170,7 @@ export default defineComponent({
         position: 'Software Developer',
         skills: ['NodeJS', 'Vue.js', 'PHP', 'Kotlin'],
         content: `Web and Mobile developer as part of an internship during my 3rd year of Bachelor in Bordeaux.
-        This Digital agency had different customer needs and a very small team. I was in charge of some of the Android applications,
+        This Digital agency had a broad variety of customer needs and a very small team. I was in charge of some of the Android applications, \
         as well as some of the Web applications we were developing. It included working with Vue.js and Symfony.`
       },
       {
