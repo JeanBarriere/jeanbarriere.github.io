@@ -6,11 +6,10 @@
     <h3 class="headline">
       experience
     </h3>
-    <div class="select-text flex flex-col items-stretch">
+    <div class="select-text flex flex-col items-stretch space-y-16">
       <section
         v-for="(exp, idx) of experiences"
         :key="`exp-${idx}`"
-        class="my-8"
       >
         <div class="flex row items-end justify-between mb-2">
           <component
@@ -209,7 +208,7 @@ export default defineComponent({
 
 <style>
 .headline {
-  @apply relative font-light tracking-wider font-sans text-xl text-right subpixel-antialiased leading-none mb-8 mt-12;
+  @apply relative font-light tracking-wider font-sans text-2xl text-right subpixel-antialiased leading-none mb-8 mt-12;
 }
 .headline::before {
   content: '';
