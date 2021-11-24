@@ -4,16 +4,6 @@
       <logo class="h-8 w-24 cursor-pointer" />
     </router-link>
     <div class="flex items-center space-x-6">
-      <a
-        href="https://medium.com/@barriere.j"
-        target="_blank"
-        rel="noopener"
-      >
-        <menu-icon
-          name="book"
-          title="blog"
-        />
-      </a>
       <router-link
         :to="{ name: 'resume' }"
         active-class="active"
@@ -36,7 +26,17 @@
           title="email me"
         />
       </a>
-      <actionable absolute>
+      <a
+        href="https://github.com/JeanBarriere"
+        target="_blank"
+        rel="noopener"
+      >
+        <menu-icon
+          name="github"
+          title="github"
+        />
+      </a>
+      <actionable>
         <template #toggler="{ triggered }">
           <menu-icon
             name="contrast"

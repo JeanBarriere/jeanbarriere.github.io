@@ -10,7 +10,7 @@
     <transition name="fade">
       <span
         v-if="showTooltip"
-        class="bg-gray-900 dark:bg-gray-700 text-white dark:text-white p-2 absolute bottom-full mb-2 left-0 rounded-md leading-snug font-sans text-sm whitespace-nowrap"
+        class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-white p-2 absolute bottom-full mb-2 left-0 rounded leading-snug font-sans text-sm whitespace-nowrap"
         v-text="title"
       />
     </transition>

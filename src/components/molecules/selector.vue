@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 dark:bg-gray-700 text-white dark:text-black p-2 absolute top-full mt-4 right-0 rounded-md leading-snug font-sans text-sm whitespace-no-wrap">
+  <div class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-white p-2 absolute top-full mt-4 right-0 rounded leading-snug font-sans text-sm whitespace-no-wrap">
     <ul class="px-4 py-2 space-y-2">
       <li
         v-for="(item, idx) of items"
@@ -12,7 +12,7 @@
           :class="{ selected, 'bg-opacity-100 dark:bg-opacity-100': selected === parseInt(idx) }"
         />
         <span
-          class="text-white"
+          class="text-gray-700 dark:text-white"
           v-text="item"
         />
       </li>
