@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <h2 class="font-bold tracking-widest font-sans text-2xl sm:text-3xl subpixel-antialiased leading-none">
-      Frontend Engineer
+      Senior Software Engineer
     </h2>
     <h3 class="headline">
       experience
@@ -119,7 +119,8 @@ export default defineComponent({
       { name: 'Rust', icon: 'rust' },
       { name: 'Kotlin', icon: 'kotlin' },
       { name: 'PHP', icon: 'php' },
-      { name: 'Go', icon: 'golang' }
+      { name: 'Go', icon: 'golang' },
+      { name: 'React', icon: 'react' }
     ],
     hobbies: [
       { name: 'Literature', icon: 'quill' },
@@ -136,6 +137,19 @@ export default defineComponent({
       { school: 'Guez de Balzac', year: 2014, type: 'BACCALAUREATE', title: 'Science', sub: 'Opt. Maths & Ancient Greek', details: 'Angoulême, FR' }
     ],
     experiences: [
+      {
+        company: 'Shell Energy',
+        website: 'https://shellenergy.nl',
+        from: 'Jan. 2022',
+        to: 'Today',
+        position: 'Senior Software Engineer',
+        skills: ['Typescript', 'NodeJS', 'React', 'Github'],
+        content: `I joined Shell Energy as a contractor to work on the Shell Energy products in the Netherlands. \
+          Shell Energy provides green electricity and CO₂ compensated Gas to their customers. My role in this \
+          impact-driven project is to engineer part of the design system library for the React applications, \
+          as well as creating the "my account" web application.
+          We integrated Contentful to make the whole plaform CMS driven, and I built the CI/CD pipelines in GitHub.`
+      },
       {
         company: 'Story.ai',
         website: 'https://story.ai',
