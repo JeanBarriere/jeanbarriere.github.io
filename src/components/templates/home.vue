@@ -3,8 +3,8 @@
     <div>
       <div class="py-2 mt-2 mb-4 max-w-xl">
         <p class="text-3xl tracking-wide antialiased">
-          👋 Bonjour. I’m a digital nomad based in Amsterdam and am currently looking for a new challenge.<br><br>
-          If your company is making an impact and you're looking for a passionate developer, don't hesitate to contact me!
+          👋 Bonjour. I'm a French engineer based in Amsterdam. I am currently working for Shell, helping the company develop better solutions and greener software.<br><br>
+          I'm free for volunteer work. If you're interested you can drop me an email!
         </p>
       </div>
     </div>
@@ -15,11 +15,6 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'HomeTpl',
-  methods: {
-    emailMe: function () {
-      window.open('mailto:jean@barriere.io')
-    }
-  }
+  name: 'HomeTpl'
 })
 </script>

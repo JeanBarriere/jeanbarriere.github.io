@@ -114,6 +114,7 @@ export default defineComponent({
       { name: 'Typescript', icon: 'typescript' },
       { name: 'NodeJS', icon: 'nodejs' },
       { name: 'Vue.js', icon: 'vuejs' },
+      { name: 'SharePoint', icon: 'sharepoint' },
       { name: 'Archlinux', icon: 'archlinux' },
       { name: 'Github', icon: 'github' },
       { name: 'Rust', icon: 'rust' },
@@ -138,17 +139,29 @@ export default defineComponent({
     ],
     experiences: [
       {
+        company: 'Shell',
+        website: 'https://shell.com',
+        from: 'Sept. 2023',
+        to: 'Today',
+        position: 'Senior Software Engineer - Team Lead',
+        skills: ['Typescript', 'SharePoint', 'React', 'Github'],
+        content: `As Shell Energy Retail is leaving the Netherlands, I am now working for a different team within Shell.
+          My current mission is to lead the Frontend team in building a new Communication Platform for internal teams. \
+          It is a React application built on top of SharePoint using SharePoint lists as a CMS. The content is dynamic, \
+          and the platform is integrated with Shell internal security standards.`
+      },
+      {
         company: 'Shell Energy',
         website: 'https://shellenergy.nl',
         from: 'Jan. 2022',
-        to: 'Today',
+        to: 'Sept. 2023',
         position: 'Senior Software Engineer',
         skills: ['Typescript', 'NodeJS', 'React', 'Github'],
         content: `I joined Shell Energy as a contractor to work on the Shell Energy products in the Netherlands. \
           Shell Energy provides green electricity and CO₂ compensated Gas to their customers. My role in this \
           impact-driven project is to engineer part of the design system library for the React applications, \
           as well as creating the "my account" web application.
-          We integrated Contentful to make the whole plaform CMS driven, and I built the CI/CD pipelines in GitHub.`
+          We integrated Contentful to make the whole plaform CMS driven, and I built the CI/CD pipelines in GitHub Actions.`
       },
       {
         company: 'Story.ai',
