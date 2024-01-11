@@ -8,8 +8,8 @@
         @click="selectItem(parseInt(idx))"
       >
         <span
-          class="bg-blue-500 dark:bg-red-500 bg-opacity-25 dark:bg-opacity-25 rounded-full w-4 h-4 border-2 border-opacity-25 border-white dark:border-white dark:border-opacity-25"
-          :class="{ selected, 'bg-opacity-100 dark:bg-opacity-100': selected === parseInt(idx) }"
+          class="bg-blue-500 dark:bg-red-500 rounded-full w-4 h-4 border-2 border-opacity-25 border-white dark:border-white dark:border-opacity-25"
+          :class="{ 'bg-opacity-100 dark:bg-opacity-100': selected === parseInt(idx), 'bg-opacity-25 dark:bg-opacity-25': selected !== parseInt(idx) }"
         />
         <span
           class="text-gray-700 dark:text-white"

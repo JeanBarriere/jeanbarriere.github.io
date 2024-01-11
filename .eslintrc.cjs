@@ -18,6 +18,11 @@ module.exports = {
   },
   overrides: [{
     files: ['**/*.vue', '**/*.ts']
+  }, {
+    files: ['*.config.cjs'],
+    env: {
+      node: true
+    }
   }],
   ignorePatterns: ['docs', 'dist', 'node_modules']
 }
