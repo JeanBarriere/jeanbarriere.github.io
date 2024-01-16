@@ -4,13 +4,13 @@
     height="24"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
-    v-bind="$attrs"
+    :style="`--filtername: url(#filter-${name})`"
   >
 
     <defs>
 
       <filter
-        :id="`filter-${name}`"
+        :id="filterName"
         class="text-white dark:text-black"
       >
         <feFlood
@@ -194,10 +194,22 @@ export default defineComponent({
       default: '0s'
     }
   },
+  data: () => ({
+    reduceMotion: true
+  }),
   computed: {
     path (): Record<string, unknown> {
       return icons[this.name]
+    },
+    filterName (): string {
+      return this.reduceMotion ? 'no-filter' : `filter-${this.name}`
     }
+  },
+  created () {
+    window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', (event: MediaQueryListEvent) => {
+      this.reduceMotion = event.matches
+    })
+    this.reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   }
 })
 </script>

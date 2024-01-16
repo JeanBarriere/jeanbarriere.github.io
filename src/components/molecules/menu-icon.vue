@@ -3,14 +3,14 @@
     <icon
       :name="name"
       class="cursor-pointer"
-      v-bind="$attrs"
+      :dur="animate || '4s'"
       @mouseover="showTooltip = true"
       @mouseleave="showTooltip = false"
     />
     <transition name="fade">
       <span
         v-if="showTooltip"
-        class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-white p-2 absolute bottom-full mb-2 left-0 rounded leading-snug font-sans text-sm whitespace-nowrap"
+        class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-white p-2 absolute bottom-full mb-2 -right-2 sm:right-[unset] sm:left-0 rounded leading-snug font-sans text-sm whitespace-nowrap"
         v-text="title"
       />
     </transition>
@@ -28,7 +28,8 @@ export default defineComponent({
   },
   props: {
     name: { type: String, required: true, validator: (v: string) => Object.keys(icons).includes(v) },
-    title: { type: String, required: true }
+    title: { type: String, required: true },
+    animate: { type: String, required: false, default: '' }
   },
   data: () => ({ showTooltip: false })
 })

@@ -109,6 +109,12 @@ export default defineComponent({
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .glitch-name span {
+    animation: none;
+  }
+}
+
 .glitch-name span:nth-child(odd) { --glitch-translate: 8px; }
 .glitch-name span:nth-child(even) { --glitch-translate: -8px; }
 

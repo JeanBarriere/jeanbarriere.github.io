@@ -1,7 +1,7 @@
 <template>
-  <nav class="flex flex-col sm:flex-row gap-y-8 items-center justify-between print:hidden relative z-10">
+  <nav class="flex flex-row gap-y-8 items-center justify-between print:hidden sticky top-12 z-10">
     <router-link :to="{ name: 'home' }">
-      <logo class="h-8 w-24 cursor-pointer" />
+      <logo class="h-8 w-24 cursor-pointer relative" />
     </router-link>
     <div class="flex items-center space-x-6">
       <router-link
@@ -12,8 +12,7 @@
         <menu-icon
           name="resume"
           title="about me"
-          dur="3s"
-          style="--filtername: url(#filter-resume)"
+          animate="3s"
         />
       </router-link>
       <a
@@ -42,8 +41,7 @@
             name="contrast"
             title="theme"
             :class=" { 'active': triggered }"
-            dur="10s"
-            style="--filtername: url(#filter-contrast)"
+            animate="10s"
           />
         </template>
         <template #content="{ close }">
@@ -70,7 +68,7 @@ export default defineComponent({
   name: 'OHeader',
   components: { Actionable, Logo, MenuIcon, Selector },
   data: () => ({
-    currentTheme: localStorage.getItem('currentTheme') ?? 'system'
+    currentTheme: typeof window !== 'undefined' ? localStorage.getItem('currentTheme') ?? 'system' : 'system'
   } as { currentTheme: 'dark' | 'light' | 'system' }),
   watch: {
     currentTheme () {
@@ -78,12 +76,14 @@ export default defineComponent({
     }
   },
   created () {
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event: MediaQueryListEvent) => {
-      if (this.currentTheme === 'system') {
-        this.setDocumentTheme(event.matches ? 'dark' : 'light')
-      }
-    })
-    this.updateCurrentTheme()
+    if (typeof window !== 'undefined') {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event: MediaQueryListEvent) => {
+        if (this.currentTheme === 'system') {
+          this.setDocumentTheme(event.matches ? 'dark' : 'light')
+        }
+      })
+      this.updateCurrentTheme()
+    }
   },
   methods: {
     setDefaultTheme (): void {
@@ -111,3 +111,10 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="css" scoped>
+nav:before {
+  content: '';
+  @apply block absolute -top-12 -bottom-6 -inset-x-4 sm:-inset-x-6 backdrop-blur-lg border-b border-white/75 dark:border-black/75;
+}
+</style>

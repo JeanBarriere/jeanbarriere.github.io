@@ -36,8 +36,7 @@
               :key="`exp-${idx}-skill-${sIdx}`"
               :name="skill.icon"
               :title="skill.name"
-              dur="5s"
-              :style="`--filtername: url(#filter-${skill.icon})`"
+              animate="5s"
             />
           </div>
         </div>
@@ -77,8 +76,7 @@
           class="block"
           :name="hobby.icon"
           :title="hobby.name"
-          dur="3s"
-          :style="`--filtername: url(#filter-${hobby.icon})`"
+          animate="3s"
         />
         <span
           class="hidden print:block tracking-wide font-sans text-md subpixel-antialiased leading-normal"
