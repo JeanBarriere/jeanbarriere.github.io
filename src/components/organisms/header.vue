@@ -1,6 +1,9 @@
 <template>
   <nav class="flex flex-row gap-y-8 items-center justify-between print:hidden sticky top-12 z-10">
-    <router-link :to="{ name: 'home' }">
+    <router-link
+      :to="{ name: 'home' }"
+      aria-label="go to homepage"
+    >
       <logo class="h-8 w-24 cursor-pointer relative" />
     </router-link>
     <div class="flex items-center space-x-6">
@@ -8,6 +11,7 @@
         :to="{ name: 'resume' }"
         active-class="active"
         exact-active-class=""
+        aria-label="read resume"
       >
         <menu-icon
           name="resume"
@@ -19,6 +23,7 @@
         href="mailto:jean@barriere.io"
         target="_blank"
         rel="noopener"
+        aria-label="send email"
       >
         <menu-icon
           name="bubble"
@@ -29,6 +34,7 @@
         href="https://github.com/JeanBarriere"
         target="_blank"
         rel="noopener"
+        aria-label="access GitHub"
       >
         <menu-icon
           name="github"
